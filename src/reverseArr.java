@@ -3,16 +3,17 @@ import java.util.Scanner;
 
 public class reverseArr {
 
+
       /*
-        Given String array
+        Given a String array
 
-        reverse the String array
+        Reverse the String array
 
-        print the reversed array
+        Print the reversed array
 
-        NOTE: While printing the array dont use for loop
+        NOTE: While printing the array don't use for loop
+
         Use Arrays.toString(your_array_name);
-
 
      */
 
@@ -24,7 +25,8 @@ public class reverseArr {
 
         String[] useThisArray = myStr.split(" ");
 
-//        code start here
+//        Code start here ignore the above codes, that is related to the test class.
+//        You should use -> useThisArray
 
         String[] reversed = new String[useThisArray.length];
 

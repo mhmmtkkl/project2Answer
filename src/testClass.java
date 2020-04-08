@@ -108,63 +108,6 @@ public class testClass {
     }
 
 
-    @Test
-    public void removeDuplicates1() {
-        final String testString = "1 2 2 2 3 3 3 4 4 4 5 5 5";
-        provideInput(testString);
-
-        removeDuplicates.main(new String[0]);
-
-        String studentResult = getOutput();
-
-        studentResult = studentResult.replace("[" , "");
-
-        studentResult = studentResult.replace("]" , "");
-
-        studentResult = studentResult.replace("," , "");
-
-        String[] resultArr = studentResult.split(" ");
-
-        List<String> r1 = new ArrayList<>();
-
-        r1 = Arrays.asList(resultArr);
-
-        String[] expected = new String[]{"1","2","3","4","5"};
-        for(int i = 0 ; i < expected.length ; i++){
-
-            Assert.assertTrue("Expected result is " + Arrays.toString(expected) + " your result is " + r1 , r1.get(i).contains(expected[i]) );
-        }
-
-    }
-
-
-    @Test
-    public void removeDuplicates2() {
-        final String testString = "1 2 2 2 3 3 3 4 4 4 5 5 5 6 6 7 8 9 10";
-        provideInput(testString);
-
-        removeDuplicates.main(new String[0]);
-
-        String studentResult = getOutput();
-
-        studentResult = studentResult.replace("[", "");
-
-        studentResult = studentResult.replace("]", "");
-
-        studentResult = studentResult.replace(",", "");
-
-        String[] resultArr = studentResult.split(" ");
-
-        List<String> r1 = new ArrayList<>();
-
-        r1 = Arrays.asList(resultArr);
-
-        String[] expected = new String[]{"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
-        for (int i = 0; i < expected.length; i++) {
-
-            Assert.assertTrue("Expected result is " + Arrays.toString(expected) + " your result is " + r1, r1.get(i).contains(expected[i]));
-        }
-    }
 
     @Test
     public void reverseArr1() {

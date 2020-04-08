@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class diffBetweenMaxMin {
 
-    /*
+     /*
     Given an array length 1 or more of ints, return the difference between the largest and smallest values in the array.
 
     Note: the built-in Math.min(v1, v2) and Math.max(v1, v2) methods return the smaller or larger of two values.
@@ -33,7 +33,8 @@ public class diffBetweenMaxMin {
 
         }
 
-//        Your code start here. Don't remove or change anything before this line. Your array is -> useThisArray in line 27
+//        Your code start here. Don't remove or change anything before this line.
+//        Your array is -> useThisArray in line 27
 
         int min = Integer.MAX_VALUE;
 
